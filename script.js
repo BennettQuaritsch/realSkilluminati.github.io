@@ -1,20 +1,18 @@
-var cursor = document.getElementById("cursor");
-
-window.onload = blink();
-
 function Sleep(milliseconds) {
     return new Promise(resolve => setTimeout(resolve, milliseconds));
    }
 
 async function blink() {
 
-    
+    var cursor = document.getElementById("cursor");
+
     while (true) {
-        document.getElementById("cursor").style.visibility = "visible";
+        //document.getElementById("cursor").style.visibility = "visible";
+        cursor.style.visibility = "visible";
 
         await Sleep(700);
 
-        document.getElementById("cursor").style.visibility = "hidden";
+        cursor.style.visibility = "hidden";
 
         await Sleep(500);
     }
