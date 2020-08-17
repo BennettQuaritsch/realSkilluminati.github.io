@@ -104,8 +104,16 @@ html, body {
 
     #menubar {
         display: inline-block;
-        padding-right: 95px;
         height: 90%;
+    }
+
+    #menubarSpan {
+        display: inline-block;
+        margin-right: 88px;
+        height: 90%;
+        border-radius: 10px;
+        transition: all 0.2s ease-in 0s;
+        padding: 0 7px;
     }
 
     #navbar-div {
@@ -113,6 +121,6 @@ html, body {
     }
 
     #headerLogo {
-        font-size: 7vh;
+        font-size: 5vh;
     }
 }

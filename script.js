@@ -19,3 +19,17 @@ async function blink() {
 
     
 }
+var clicked = false;
+
+function menuClick() {
+    var menubarSpan = document.getElementById("menubarSpan");
+
+    if (clicked == false) {
+        menubarSpan.style.boxShadow = "0 5px 30px rgba(0, 0, 0, 0.35)";
+        clicked = true;
+    }
+    else {
+        menubarSpan.style.boxShadow = "none";
+        clicked = false;
+    }
+}
