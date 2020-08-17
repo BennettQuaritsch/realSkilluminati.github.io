@@ -105,9 +105,13 @@ html, body {
     #menubar {
         display: inline-block;
         padding-right: 95px;
-        height: 40%;
+        height: 90%;
     }
 
     #navbar-div {
         height: 12%;
+    }
+
+    #headerLogo {
+        font-size: 150%;
     }
