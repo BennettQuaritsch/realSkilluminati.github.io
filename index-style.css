@@ -8,20 +8,36 @@ html, body {
     margin: 0;
 }
 
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    font: 700 26px Roboto, sans-serif;
+    width: auto;
+    min-height: 10vh;
+    height: auto;
+    margin: 10px 10px 0;
+    border-radius: 15px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.35);
+    flex-shrink: 0;
+}
+
 #navbar-div {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font: 700 26px Roboto, sans-serif;
-    width: auto;
-    margin: 10px 10px 0;
-    border-radius: 15px;
-    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.35);
+    flex-shrink: 0;
+    width: 100%;
+    height: auto;
+    min-height: 10vh;
 }
 
 #navbar {
     list-style-type: none;
-    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #navbar li {
@@ -74,14 +90,14 @@ html, body {
 
 #openerDiv h1 {
     display: inline-block;
-    font: 700 70px Roboto, sans-serif;
+    font: 700 10vh Roboto, sans-serif;
     vertical-align: middle;
 }
 
 #openerDiv img {
     display: inline-block;
     vertical-align: middle;
-    height: 90px;
+    height: 14vh;
 }
 
 /*------------------------------------------------*/
@@ -97,30 +113,52 @@ html, body {
     display: none;
 }
 
+.mobilePopUpMenu {
+    padding: 1%;
+    display: none;
+    text-decoration: none;
+    color: black;
+}
+
+/*---------------------------------------------------------*/
+
 @media only screen and (max-width: 1000px) {
     #navbar {
         display: none;
     }
 
     #menubar {
-        display: inline-block;
-        height: 90%;
+        display: block;
+        height: 100%;
     }
 
     #menubarSpan {
-        display: inline-block;
         margin-right: 88px;
-        height: 90%;
+        height: 8vh;
+        min-width: 8vh;
         border-radius: 10px;
         transition: all 0.2s ease-in 0s;
         padding: 0 7px;
     }
 
-    #navbar-div {
-        height: 10%;
+    #header {
+        height: auto;
     }
 
     #headerLogo {
         font-size: 5vh;
+    }
+
+    .mobilePopUpMenu:first-of-type {
+        margin-top: 3%;
+    }
+
+    .mobilePopUpMenu:last-of-type {
+        margin-bottom: 3%;
+    }
+
+    .mobilePageActive {
+        box-shadow: 0 5px 30px rgba(0, 0, 0, 0.35);
+        border-radius: 10px;
     }
 }

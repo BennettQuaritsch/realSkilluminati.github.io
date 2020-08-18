@@ -24,12 +24,29 @@ var clicked = false;
 function menuClick() {
     var menubarSpan = document.getElementById("menubarSpan");
 
+    var popUpMenu = document.getElementsByClassName("mobilePopUpMenu");
+
+    var header = document.getElementById("header");
+
     if (clicked == false) {
         menubarSpan.style.boxShadow = "0 5px 30px rgba(0, 0, 0, 0.35)";
         clicked = true;
+        
+        for ( i = 0 ; i < popUpMenu.length; i++) {
+            popUpMenu[i].style.display = "inline";
+            header.style.justifyContent = "space-around";
+            //header.style.height = "auto";
+        }
+
     }
     else {
         menubarSpan.style.boxShadow = "none";
         clicked = false;
+
+        for ( i = 0 ; i < popUpMenu.length; i++) {
+            popUpMenu[i].style.display = "none";
+            header.style.justifyContent = "space-between";
+            header.style.height = "auto";
+        }
     }
 }
