@@ -15,7 +15,7 @@ html, body {
     flex-direction: column;
     font: 700 26px Roboto, sans-serif;
     width: auto;
-    min-height: 10vh;
+    min-height: 6vh;
     height: auto;
     margin: 10px 10px 0;
     border-radius: 15px;
@@ -29,8 +29,8 @@ html, body {
     align-items: center;
     flex-shrink: 0;
     width: 100%;
-    height: auto;
-    min-height: 10vh;
+    height: 7vh;
+    min-height: 55px;
 }
 
 #navbar {
@@ -38,13 +38,13 @@ html, body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0;
 }
 
 #navbar li {
     display: inline-block;
     padding: 0 25px;
     cursor: pointer;
-    
 }
 
 #navbar li:last-of-type {
@@ -68,15 +68,14 @@ html, body {
 #navbar li a {
     display: inline-block;
     padding: 6px 15px;
-    transition: all 0.2s ease-in 0s;
+    transition: all 0.15s ease-in 0s;
 }
 
 #navbar li a:hover {
-    display: inline-block;
     background: rgba(245, 245, 245, 0.9);
     box-shadow: 0 5px 30px rgba(0, 0, 0, 0.35);
     border-radius: 10px;
-    font-size: 30px;
+    /* font-size: 30px; */
 }
 
 /*------------------------------------------------*/
@@ -137,7 +136,7 @@ html, body {
         height: 8vh;
         min-width: 8vh;
         border-radius: 10px;
-        transition: all 0.2s ease-in 0s;
+        transition: all 0.15s ease-in 0s;
         padding: 0 7px;
     }
 
@@ -147,6 +146,8 @@ html, body {
 
     #headerLogo {
         font-size: 5vh;
+        padding: 0;
+        margin-left: 95px;
     }
 
     .mobilePopUpMenu:first-of-type {
@@ -160,5 +161,9 @@ html, body {
     .mobilePageActive {
         box-shadow: 0 5px 30px rgba(0, 0, 0, 0.35);
         border-radius: 10px;
+    }
+
+    #openerDiv h1 {
+        font-size: 10vw;
     }
 }
