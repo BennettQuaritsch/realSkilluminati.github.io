@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap');
+
+.centerContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.centerSpan{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+#headline {
+    font: 700 100px "Roboto", sans-serif;
+    margin: 0;
+}
+
+#subtitle {
+    font: 300 50px "Roboto", sans-serif;
+    margin: 0;
+}
+
+#seconds {
+    font: 700 100px "Roboto", sans-serif;
+    margin: 0;
+}
+
+#secondsSubtitle {
+    font: 300 100px "Roboto", sans-serif;
+    margin: 0;
+}
