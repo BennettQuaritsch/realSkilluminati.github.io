@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap');
 
+body {
+    margin: 0;
+}
+
 .centerContainer{
     display: flex;
     flex-direction: column;
@@ -16,21 +20,49 @@
 }
 
 #headline {
-    font: 700 100px "Roboto", sans-serif;
+    font: 700 10vw "Roboto", sans-serif;
     margin: 0;
 }
 
 #subtitle {
-    font: 300 50px "Roboto", sans-serif;
+    font: 300 5vw "Roboto", sans-serif;
     margin: 0;
 }
 
 #seconds {
-    font: 700 100px "Roboto", sans-serif;
+    font: 700 10vw "Roboto", sans-serif;
     margin: 0;
 }
 
 #secondsSubtitle {
-    font: 300 100px "Roboto", sans-serif;
+    font: 300 10vw "Roboto", sans-serif;
     margin: 0;
+}
+
+#picture1 {
+    height: 50vh;
+    border-radius: 5%;
+    padding: 10px 0;
+}
+
+@media(min-width: 1000px) {
+    #headline {
+        font: 700 100px "Roboto", sans-serif;
+        margin: 0;
+    }
+    
+    #subtitle {
+        font: 300 50px "Roboto", sans-serif;
+        margin: 0;
+    }
+    
+    #seconds {
+        font: 700 100px "Roboto", sans-serif;
+        margin: 0;
+    }
+    
+    #secondsSubtitle {
+        font: 300 100px "Roboto", sans-serif;
+        margin: 0;
+    }
 }
