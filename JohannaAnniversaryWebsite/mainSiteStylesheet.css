@@ -9,7 +9,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .centerSpan{
@@ -43,6 +43,11 @@ body {
     height: 50vh;
     border-radius: 5%;
     padding: 10px 0;
+}
+
+.imageSubtitle {
+    font: 700 30px "Roboto", sans-serif;
+    margin: 0;
 }
 
 @media(min-width: 1000px) {

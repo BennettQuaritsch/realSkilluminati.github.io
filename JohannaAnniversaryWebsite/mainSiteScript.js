@@ -14,5 +14,12 @@ function getSeconds() {
     document.getElementById("seconds").innerHTML = String(time);
 }
 
+var messageArray = ["Ich liebe dich ❤️", "Du bist heiß ❤️", "Du bist schlau ❤️", "Du bist hübsch ❤️", "Du bist besonders ❤️", "Du bist kinky ❤️", "Du bist süß ❤️", "Du bist verdammt süß, wenn du schläfst ❤️", "Du liebst mich ❤️"];
+
+function motivationMessage() {
+    var message = messageArray[Math.floor(Math.random() * messageArray.length)]
+    alert(message);
+}
+
 
 
